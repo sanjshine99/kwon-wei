@@ -93,6 +93,7 @@ export default function Enquiry() {
                 <img 
                     src="/lattern.png"  /* Ensure your image is named lantern.png in public folder */
                     alt="Decorative Lantern"
+                    loading="lazy"
                     className="w-full h-auto opacity-80"
                 />
             </div>

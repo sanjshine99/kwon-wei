@@ -65,6 +65,7 @@ export default function Contact() {
       <div className="absolute top-0 left-[5%] sm:left-[8%] z-20 w-16 sm:w-24 lg:w-32 pointer-events-none lantern-sway-left">
         <img
           src="/lattern.png"
+          loading="lazy"
           alt="Decorative Lantern"
           className="w-full h-auto opacity-70 brightness-90"
         />

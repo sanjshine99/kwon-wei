@@ -79,6 +79,7 @@ export default function GDPRConsent() {
             <img
               src="/revisit.svg"
               alt="Settings"
+              loading="lazy"
               className="w-5 h-5 invert brightness-0 group-hover:filter-none"
             />
           </button>

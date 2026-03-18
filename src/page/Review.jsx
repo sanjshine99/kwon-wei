@@ -73,6 +73,7 @@ const ReviewsSection = () => {
                 <img
                   src={review.img}
                   alt={review.name}
+                  loading="lazy"
                   className="w-12 h-12 rounded-full object-cover relative border border-white/10"
                 />
               </div>

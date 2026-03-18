@@ -32,7 +32,17 @@ export default function Navbar() {
 
   const scrollToSection = (e, id) => {
     const isHomePage = window.location.pathname === "/";
-    if (isHomePage) {
+    
+    // If it's the home link (empty id) and we are already on the home page, just scroll to top
+    if (isHomePage && !id) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.history.pushState(null, "", "/");
+        setMobileMenuOpen(false);
+        return;
+    }
+
+    if (isHomePage && id) {
       const element = document.getElementById(id);
       if (element) {
         e.preventDefault();
@@ -48,7 +58,7 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: "HOME", id: "home", type: "scroll" },
+    { name: "HOME", path: "/", id: "", type: "scroll" }, // Updated path to "/"
     { name: "ABOUT", path: "/about", type: "page" },
     { name: "MENU", id: "menu", type: "scroll" },
     { name: "GALLERY", id: "gallery", type: "scroll" },
@@ -71,10 +81,10 @@ export default function Navbar() {
               : "bg-transparent"
           }`}
         >
-          {/* LOGO */}
+          {/* LOGO - Points to root / */}
           <Link
-            to="/#home"
-            onClick={(e) => scrollToSection(e, "home")}
+            to="/"
+            onClick={(e) => scrollToSection(e, "")}
             className="flex items-center gap-2"
           >
             <h2 className="text-2xl tracking-[0.2em] font-bold text-white font-serif uppercase">
@@ -84,11 +94,11 @@ export default function Navbar() {
 
           {/* DESKTOP MENU */}
           <div className="hidden xl:flex items-center gap-8 text-[11px] font-bold tracking-[0.15em] text-white/90">
-            {navLinks.map((link) =>
+            {navLinks.map((link, index) =>
               link.type === "scroll" ? (
                 <Link
-                  key={link.id}
-                  to={`/#${link.id}`}
+                  key={index}
+                  to={link.path || `/#${link.id}`}
                   onClick={(e) => scrollToSection(e, link.id)}
                   className="hover:text-[#E5162D] transition-colors duration-300"
                 >
@@ -96,7 +106,7 @@ export default function Navbar() {
                 </Link>
               ) : (
                 <Link
-                  key={link.path}
+                  key={index}
                   to={link.path}
                   className="hover:text-[#E5162D] transition-colors duration-300"
                 >
@@ -131,11 +141,11 @@ export default function Navbar() {
         {/* MOBILE MENU */}
         {mobileMenuOpen && (
           <div className="xl:hidden absolute top-full left-4 right-4 mt-2 bg-black border border-white/10 p-8 flex flex-col gap-6 text-center shadow-2xl rounded-2xl">
-            {navLinks.map((link) =>
+            {navLinks.map((link, index) =>
               link.type === "scroll" ? (
                 <Link
-                  key={link.id}
-                  to={`/#${link.id}`}
+                  key={index}
+                  to={link.path || `/#${link.id}`}
                   onClick={(e) => scrollToSection(e, link.id)}
                   className="text-lg font-bold tracking-widest text-white hover:text-[#E5162D] transition-colors"
                 >
@@ -143,7 +153,7 @@ export default function Navbar() {
                 </Link>
               ) : (
                 <Link
-                  key={link.path}
+                  key={index}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-lg font-bold tracking-widest text-white hover:text-[#E5162D] transition-colors"

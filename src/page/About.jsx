@@ -14,7 +14,8 @@ export default function AboutUs() {
       />
       <img
         src="/right-letters.svg"
-        alt=""
+        alt="right-letters"
+        loading="lazy"
         className="absolute right-0 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none hidden md:block invert"
         data-aos="fade-left"
         data-aos-duration="1500"
@@ -26,6 +27,7 @@ export default function AboutUs() {
         <div data-aos="zoom-in" data-aos-duration="1000">
           <img
             src="about.png"
+            loading="lazy"
             alt="about wong kwei restaurant"
             className="mx-auto mt-10 mb-10 w-20 md:w-28 brightness-200"
             style={{ filter: "drop-shadow(0px 0px 8px rgba(229, 22, 45, 0.5)) invert(1)" }}

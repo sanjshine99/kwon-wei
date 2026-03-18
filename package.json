@@ -1,5 +1,5 @@
 {
-  "name": "Wong Kwei",
+  "name": "wongkwei",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,10 +20,8 @@
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.8.2",
-    "react-router-hash-link": "^2.4.3",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {

@@ -33,7 +33,7 @@ export default function HeroSection() {
 
   return (
     <section
-      id="#"
+      id="/#"
       className="w-full min-h-screen text-white p-4 md:p-6 lg:p-8 pt-24 md:pt-28 bg-cover bg-center bg-no-repeat relative"
       style={{
         backgroundImage: "url('/bg.jpeg')",
@@ -120,6 +120,7 @@ export default function HeroSection() {
             >
               <img
                 src={item.img}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 alt={item.title}
               />

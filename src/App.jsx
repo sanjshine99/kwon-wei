@@ -9,7 +9,7 @@ import Home from "./page/Home";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
-import GDPRBanner from "../src/components/GDPRBanner"
+import GDPRBanner from "./components/GDPRBanner"
 import { FaPhoneAlt } from "react-icons/fa";
 import AboutUs from "./page/About";
 import ReviewsSection from "./page/Review";

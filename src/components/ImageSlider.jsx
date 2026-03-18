@@ -124,6 +124,7 @@ const ImageSlider3 = () => {
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                     <img
                       src={img}
+                      loading="lazy"
                       className="w-full h-full object-top transition-transform duration-1000 group-hover:scale-110"
                       alt={`Gallery ${i + 1}`}
                     />

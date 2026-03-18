@@ -3,7 +3,7 @@ import Menu from "../components/Menu";
 import Contact from "../components/Contact";
 import MapSection from "../components/MapSection";
 import ImageSlider from "../components/ImageSlider"
-import Enquiry from '../components/Enquery';
+import Enquiry from '../components/Enquiry';
 
 const Home = () => {
     return (

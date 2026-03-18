@@ -70,6 +70,7 @@ export default function MenuPage() {
       <div className="absolute top-0 right-[5%] sm:right-[8%] z-50 w-16 sm:w-24 lg:w-32 pointer-events-none lantern-sway-right">
         <img
           src="/lattern.png"
+          loading="lazy"
           alt="Decorative Lantern"
           className="w-full h-auto opacity-80"
         />
@@ -84,7 +85,8 @@ export default function MenuPage() {
         <div className="w-full lg:w-[40%] lg:sticky lg:top-0 lg:h-screen h-[35vh] overflow-hidden">
           <div className="absolute inset-0 bg-black/40 z-10" />
           <img
-            src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80"
+            src="/menu.jpeg"
+            loading="lazy"
             className="w-full h-full object-cover"
             alt="Chinese Cuisine"
           />
