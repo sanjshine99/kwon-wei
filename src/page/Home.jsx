@@ -11,7 +11,6 @@ const Home = () => {
             <Hero />
             <Menu />
             <ImageSlider />
-            {/* <VenueSection /> */}
             <Contact />
             <Enquiry />
             <MapSection />

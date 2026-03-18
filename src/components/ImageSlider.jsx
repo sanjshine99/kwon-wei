@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "c1.png",
-  "h3.png",
-  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=80",
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80",
-  "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1400&q=80",
+  "i1.png",
+  "i2.png",
+  "i3.png",
+  "i5.png",
+  "i6.png",
+  "i7.png",
+  "i8.png",
+  "i9.png",
+  "i10.png",
+  "i11.png"
 ];
 
 const ImageSlider3 = () => {
@@ -56,14 +61,13 @@ const ImageSlider3 = () => {
             <div
               className="flex transition-transform duration-700 ease-in-out gap-6"
               style={{
-                transform: `translateX(-${
-                  index *
+                transform: `translateX(-${index *
                   (100 /
                     (typeof window !== "undefined" &&
-                    window.innerWidth < 768
+                      window.innerWidth < 768
                       ? 1
                       : 3))
-                }%)`,
+                  }%)`,
               }}
             >
               {images.map((img, i) => (
