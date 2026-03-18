@@ -16,19 +16,19 @@ export default function HeroSection() {
 
   const bentoItems = [
     {
-      img: "/h1.png",
+      img: "/i1.png",
       title: "Event Reservation",
       desc: "Book a table for special occasions and enjoy our signature dishes",
       id: "contact"
     },
     {
-      img: "/h2.png",
+      img: "/i2.png",
       title: "Opening Hours",
       // Changed to an array for "one by one" display
       desc: ["Mon – Thu: 5:00 PM – 10:00 PM", "Fri – Sat: 5:00 PM – 10:30 PM", "Sun: 5:00 PM – 10:00 PM"],
       id: "find-us"
     },
-    { img: "/h3.png", title: "Delivery up to 7 miles", desc: "You requested an increased service radius — we’ve now expanded it accordingly.", id: "about" },
+    { img: "/i3.png", title: "Delivery up to 7 miles", desc: "You requested an increased service radius — we’ve now expanded it accordingly.", id: "about" },
   ];
 
   return (

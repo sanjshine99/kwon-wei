@@ -85,9 +85,9 @@ export default function MenuPage() {
         <div className="w-full lg:w-[40%] lg:sticky lg:top-0 lg:h-screen h-[35vh] overflow-hidden">
           <div className="absolute inset-0 bg-black/40 z-10" />
           <img
-            src="/menu.jpeg"
+            src="/i8.png"
             loading="lazy"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-top"
             alt="Chinese Cuisine"
           />
           <div className="absolute bottom-10 left-10 z-20 hidden lg:block">
