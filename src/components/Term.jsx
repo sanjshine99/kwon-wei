@@ -27,7 +27,7 @@ const TermsConditions = () => {
                   <section>
                       <h2 className="text-2xl font-medium">3. Intellectual Property</h2>
                       <p className="text-white">
-                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to AF-MOK Performance.
+                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to Wong Kwei.
                           You may view, download, and print content for personal use only.
                           You must not copy, reproduce, or distribute our website content without prior written consent.
                       </p>
@@ -78,7 +78,7 @@ const TermsConditions = () => {
                       <div className="text-white">
                           <p><strong>Wong Kwei Restaurant</strong></p>
                           <p>Email: <a href="mailto:wongkweiashby@gmail.com" className="text-cyan-400 hover:underline">wongkweiashby@gmail.com</a></p>
-                          <p>Phone:  +44 1530 412394</p>
+                          <p>Phone:  01530 412394</p>
                           <p>Address: Wong Kwei Restaurant, 9 Bath St, Ashby-de-la-Zouch LE65 2FH, United Kingdom</p>
                       </div>
                   </section>

@@ -42,7 +42,7 @@ const VenueBookingForm = () => {
   };
 
   const inputStyles = "w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white focus:outline-none focus:border-[#E5162D] focus:ring-1 focus:ring-[#E5162D] transition-all duration-300";
-  const labelStyles = "block text-xs font-bold tracking-widest uppercase text-black mb-2 ml-1";
+  const labelStyles = "block text-xs font-bold tracking-widest uppercase text-white/70 mb-2 ml-1";
 
   return (
     <section className="relative py-24 px-6 bg-black text-white overflow-hidden">
@@ -71,7 +71,7 @@ const VenueBookingForm = () => {
                 <label className={labelStyles}>Full Name</label>
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 -translate-y-1/2 text-white" size={16} />
-                  <input name="fullName" type="text" placeholder="John Doe" required className={`${inputStyles} pl-12`} />
+                  <input name="fullName" type="text" placeholder="Enter Your Name" required className={`${inputStyles} pl-12`} />
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ const VenueBookingForm = () => {
                 <label className={labelStyles}>Phone Number</label>
                 <div className="relative">
                   <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-white" size={16} />
-                  <input name="phone" type="tel" placeholder="+44 7700 900000" required className={`${inputStyles} pl-12`} />
+                  <input name="phone" type="tel" placeholder="Enter Your Phone Number" required className={`${inputStyles} pl-12`} />
                 </div>
               </div>
 
@@ -87,7 +87,7 @@ const VenueBookingForm = () => {
                 <label className={labelStyles}>Email Address</label>
                 <div className="relative">
                   <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white" size={16} />
-                  <input name="email" type="email" placeholder="john@example.com" required className={`${inputStyles} pl-12`} />
+                  <input name="email" type="email" placeholder="Enter Your Email" required className={`${inputStyles} pl-12`} />
                 </div>
               </div>
             </div>
